@@ -1,6 +1,6 @@
 package domain;
 
-public class CommentInfo extends Post {
+public class CommentsInfo extends Post {
     private int count;
     private boolean canPost;
 

@@ -3,12 +3,12 @@ package domain;
 public class Post {
     private int id;
     private DateInfo dateInfo;
-    private int authorID;
+    private int ownerId;
     private BodyInfo bodyInfo;
     private LikeInfo likeInfo;
     private ViewInfo viewInfo;
     private RepostInfo repostInfo;
-    private CommentInfo commentInfo;
+    private CommentsInfo commentsInfo;
     private boolean friendsOnly;
 
     public boolean isFriendsOnly() {
@@ -35,12 +35,12 @@ public class Post {
         this.id = id;
     }
 
-    public int getAuthorID() {
-        return authorID;
+    public int getOwnerId() {
+        return ownerId;
     }
 
-    public void setAuthorID(int authorID) {
-        this.authorID = authorID;
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
     }
 
     public BodyInfo getBodyInfo() {
@@ -75,12 +75,12 @@ public class Post {
         this.repostInfo = repostInfo;
     }
 
-    public CommentInfo getCommentInfo() {
-        return commentInfo;
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
     }
 
-    public void setCommentInfo(CommentInfo commentInfo) {
-        this.commentInfo = commentInfo;
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
     }
 
 }
