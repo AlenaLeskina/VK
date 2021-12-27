@@ -2,7 +2,9 @@ package domain;
 
 public class Post {
     private int id;
+    private DateInfo dateInfo;
     private int authorID;
+    private BodyInfo bodyInfo;
     private LikeInfo likeInfo;
     private ViewInfo viewInfo;
     private RepostInfo repostInfo;
@@ -15,6 +17,14 @@ public class Post {
 
     public void setFriendsOnly(boolean friendsOnly) {
         this.friendsOnly = friendsOnly;
+    }
+
+    public DateInfo getDateInfo() {
+        return dateInfo;
+    }
+
+    public void setDateInfo(DateInfo dateInfo) {
+        this.dateInfo = dateInfo;
     }
 
     public int getId() {
@@ -31,6 +41,14 @@ public class Post {
 
     public void setAuthorID(int authorID) {
         this.authorID = authorID;
+    }
+
+    public BodyInfo getBodyInfo() {
+        return bodyInfo;
+    }
+
+    public void setBodyInfo(BodyInfo bodyInfo) {
+        this.bodyInfo = bodyInfo;
     }
 
     public LikeInfo getLikeInfo() {
